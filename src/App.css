@@ -1,0 +1,301 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-image: url("./madera.png");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.wrapper {
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    background-color: #444866;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #332d2d;
+    box-shadow: 5px 10px #212338;
+}
+.Titulo_ventana{
+    width: auto;
+    height: auto;
+
+}
+.Titulo_casio {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #74768c;
+  font-weight: bold;
+}
+
+.ventana{
+  width: auto;
+
+  float: left;
+  color: #444866; 
+
+}
+.Titulo_SVPAM {
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #9b4444;
+  font-weight: bold;
+  font-style: italic;
+}
+.Titulo_Fx {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #74768c;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.Layer_botones{
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 220px;
+  height: 300px;
+ 
+}
+.Layer_columnas{
+  float: left;
+
+
+}
+
+.Layer_espacio{
+  float: left;
+  margin-top: 10px;
+  width: 5px;
+  height: 10px;
+
+}
+
+.Layer_botones_falsos{
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  width: 220px;
+  height: 380px;
+ 
+}
+.display {
+    font-family: sans-serif;
+    margin: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: right;
+    padding-right: 5%;
+    font-size: 2em;
+    color: #000000;
+    width: 200px;
+    height: 100px;
+    background-color: #564141;
+    border: solid 5px #011627;
+}
+
+.error {
+    color: #260307;
+}
+
+.Boton {
+    font-family:sans-serif;
+    background-color: #7c7c7c;
+    width: 37px;
+    height: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #323238;
+}
+
+.boton-special {
+    float: left;
+    background-color: #aa4333;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.botoncito {
+    margin-left: 3px;
+    margin-top: 3px;
+    float: left;
+    background-color: #d3c8c6;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 10px;
+}
+.botoncito_gigante {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    float: left;
+    background-color: #d3c8c6;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 20px;
+    color: #7a7777;
+    box-shadow: 2px 2px #323238;
+}
+.botoncito_negro {
+    margin-left: 3px;
+    margin-top: 5px;
+    float: left;
+    background-color: #000000;
+    width: 25px;
+    height: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.Boton:hover {
+    background-color: #adacab;
+    box-shadow: 2px 2px #323238;
+
+}
+.Boton:active {
+  background-color: #adacab;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+.botoncito_gigante:hover {
+    background-color: #cecece;
+    box-shadow: 2px 2px #323238;
+
+}
+.botoncito_gigante:active {
+  background-color: #cecece;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.boton-special:hover {
+    background-color: #f2c08e;
+    box-shadow: 2px 2px #323238;
+
+}
+.boton-special:active {
+  background-color: #adacab;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.highlight {
+    cursor: pointer;
+    /*para evitar highlight en el boton*/
+    /* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  @-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
